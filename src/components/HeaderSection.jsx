@@ -13,7 +13,8 @@ const HeaderSection = () => {
                 height="150"
                 viewBox="0 0 200 200"
                 className="absolute top-0 left-0 md:w-96 md:h-96"
-                transform="rotate(180)"
+                // transform="rotate(180)"
+                style={{ transform: "rotate(180deg)" }}
             >
             <path
                 d="M200,0 L200,400 C300,150 300,250 400,400 Q100,300 0,200 Q100,0 200,0 Z"
@@ -40,7 +41,8 @@ const HeaderSection = () => {
                 height="150"
                 viewBox="0 0 200 200"
                 className="absolute top-0 right-0 md:w-96 md:h-96"
-                transform="rotate(270)"
+                style={{ transform: "rotate(270deg)" }}
+                // transform="rotate(270)"
             >
             <path
                 d="M200,0 L200,400 C300,150 300,250 400,400 Q100,300 0,200  Q100,0 200,0 Z"

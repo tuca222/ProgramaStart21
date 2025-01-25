@@ -111,13 +111,13 @@ const RegistrationSection = ({ id }) => {
 
     return (
         <div id={id} className="font-inria text-xl px-5">
-            <h1 className="font-italianno text-6xl text-purple-default">
+            <h1 className="font-italianno font-bold text-6xl text-purple-default">
                 Inscreva-se Agora
             </h1>
-            <h1 className="font-italianno text-6xl text-purple-default">
+            <h1 className="font-italianno font-bold text-6xl text-purple-default">
                 e
             </h1>
-            <h1 className="font-italianno text-6xl text-purple-default">
+            <h1 className="font-italianno font-bold text-6xl text-purple-default">
                 Garanta Sua Vaga!
             </h1>
             <p className="mt-5">
@@ -128,7 +128,7 @@ const RegistrationSection = ({ id }) => {
                 <span className="font-bold text-purple-default text-2xl"> R$599,00</span>.
             </p>
             <p className="mt-5">
-                Porém, como eu quero ajudar você a alcançar seus objetivos para o Carnaval e para esse ano de 2025, minha equipe e eu chegamos em um valor mais acessível.
+                Como eu quero ajudar você a alcançar seu corpo dos sonhos para o Carnaval e para esse ano de 2025, minha equipe e eu chegamos em um valor mais acessível.
             </p>
             <div className="mt-5 bg-yellow-default rounded-lg py-2 px-4">
                 <p>
