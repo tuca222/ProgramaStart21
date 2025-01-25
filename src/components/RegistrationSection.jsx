@@ -52,7 +52,7 @@ const RegistrationSection = ({ id }) => {
         let valueWhats = event.target.value.replace(/\D/g, '');
         if (valueWhats.length <= 11) {
             if (valueWhats.length > 2) valueWhats = `(${valueWhats.slice(0, 2)}) ${valueWhats.slice(2)}`;
-            if (valueWhats.length > 7) valueWhats = `${valueWhats.slice(0, 10)}-${valueWhats.slice(10)}`;
+            // if (valueWhats.length > 7) valueWhats = `${valueWhats.slice(0, 10)}-${valueWhats.slice(10)}`;
 
             setWhatsapp(valueWhats);
 
