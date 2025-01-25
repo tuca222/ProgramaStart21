@@ -18,6 +18,7 @@ module.exports = {
           dark: '#830281', // Roxo Escuro
         },
         yellow: {
+          light: 'rgba(238, 230, 5, 0.25)', // Amarelo Claro
           default: '#EEE605', // Amarelo
           dark: '#C2BD24', // Amarelo Curcuma
         },

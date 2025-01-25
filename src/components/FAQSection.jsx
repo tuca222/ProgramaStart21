@@ -29,7 +29,7 @@ const FaqSection = () => {
     },
     {
       question: 'Irá ter reembolso?',
-      answer: 'Como assim que o eu pagamento for confirmado eu e minha equipe já estaremos fazendo tudo para te dar  melhor atendimento o Start 21 não terá reembolso. Por isso, tenha certeza de que você está comprometido ou comprometida com a sua transformação e que você irá seguir todas as orientações que serão passadas.',
+      answer: 'Assim que o seu pagamento for confirmado, eu e minha equipe já estaremos fazendo tudo para te dar o melhor atendimento, então o Start 21 não terá reembolso. Por isso, tenha certeza de que você está comprometido ou comprometida com a sua transformação e que você irá seguir todas as orientações que serão passadas.',
     },
     {
       question: 'Preciso de ajuda, ainda tenho algumas dúvidas!',

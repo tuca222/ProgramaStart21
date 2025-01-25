@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+// import React, { useState, useRef } from "react";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
 import "@fontsource/italianno"
@@ -8,6 +9,8 @@ const RegistrationSection = ({ id }) => {
     const [nomeCompleto, setNomeCompleto] = useState('');
     const [email, setEmail] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
+
+    // const [cadastrarClicked, setCadastrarClicked] = useState(false);
 
     const [privacidadeClicked, setPrivacidadeClicked] = useState(false);
 
@@ -99,162 +102,226 @@ const RegistrationSection = ({ id }) => {
 
         if (valid) {
             try{
-                console.log("Enviou os dados:")
-                console.log("Nome: ", nomeCompleto)
-                console.log("Email: ", email)
-                console.log("WhatsApp: ", whatsapp)
+                // setCadastrarClicked(true);
+
+                const response = await fetch('/api/proxy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nomeCompleto, email, whatsapp })
+                  });
+
+                const data = await response.json();
+                console.log('Dados enviados com sucesso:', data.message);
             } catch (error) {
-                console.log("Erro ao enviar os dados: ", error)
+                console.error('Erro ao enviar os dados:', error);
             }
         }
     }
 
     return (
-        <div id={id} className="font-inria text-xl px-5">
-            <h1 className="font-italianno font-bold text-6xl text-purple-default">
-                Inscreva-se Agora
-            </h1>
-            <h1 className="font-italianno font-bold text-6xl text-purple-default">
-                e
-            </h1>
-            <h1 className="font-italianno font-bold text-6xl text-purple-default">
-                Garanta Sua Vaga!
-            </h1>
-            <p className="mt-5">
-                Venha fazer parte do programa que irá mudar seu corpo para o Carnaval.
-            </p>
-            <p className="mt-5 bg-yellow-default rounded-lg py-2 px-4">
-                Pensando no valor que cobraria pelo programa, com tudo que ele oferece, ele poderia custar pelo menos
-                <span className="font-bold text-purple-default text-2xl"> R$599,00</span>.
-            </p>
-            <p className="mt-5">
-                Como eu quero ajudar você a alcançar seu corpo dos sonhos para o Carnaval e para esse ano de 2025, minha equipe e eu chegamos em um valor mais acessível.
-            </p>
-            <div className="mt-5 bg-yellow-default rounded-lg py-2 px-4">
-                <p>
-                    <span className="underline decoration-purple-default text-2xl font-bold">Por apenas</span>
-                </p>
-                <p className="mt-2 mb-2">
-                    <span className="text-purple-default text-2xl font-bold">R$159,99</span> 
-                </p>
-                <p>
-                    <span className="text-xl font-bold">ou</span>
-                </p>
-                <p className="mt-2 mb-2">
-                    <span className="text-purple-default text-2xl font-bold">6 x de R$29,99</span> 
-                </p>
-                <p>
-                    você terá acesso a matéria exclusivoz, cardápios especiais, dicas práticas e <spam className="text-purple-default text-2xl">o meu suporte profissional</spam>.
-                </p>
+        <div id={id} className="font-inria text-xl px-5 md:flex md:flex-col md:items-center md:justify-center">
+            <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-4">
+                <h1 className="font-italianno font-bold text-6xl text-purple-default">
+                    Inscreva-se Agora
+                </h1>
+                <h1 className="font-italianno font-bold text-6xl text-purple-default">
+                    e
+                </h1>
+                <h1 className="font-italianno font-bold text-6xl text-purple-default">
+                    Garanta Sua Vaga!
+                </h1>
             </div>
             
-            <p className="mt-5">
-                As vagas são limitadas, não perca essa chance!!.
-            </p>
-            <h2 className="text-purple-default mt-5 text-2xl">
-                Inscreva-se:
-            </h2>
-            <h2 
-                className="text-purple-default mt-5 text-base"
-            >
-                <span
-                    className="underline decoration-purple-default cursor-pointer"
-                    onClick={privacidadeClickedExpand}
-                >
-                    Entenda porque pedimos seus dados!
-                </span>
-            </h2>
-            {privacidadeClicked && (
-                <div className="mt-4 p-4 mb-4 bg-gray-200 text-gray-700 rounded-lg">
-                    <h3 className="text-purple-default font-bold">
-                        Nossa Política de Privacidade:
-                    </h3>
-                    <p className="mt-4">
-                        Levamos sua privacidade e segurança a sério.
-                    </p>
-                    <p className="mt-4">
-                        Seus dados são coletados para melhorar nossa comunicação durante o programa. Eles serão utilizados exclusivamente pela nossa equipe para o contato direto com você via WhatsApp, garantindo a inclusão no grupo exclusivo do programa.
-                    </p>
-                    <p className="mt-4">
-                        Em hipótese alguma, seus dados serão vendidos, compartilhados ou divulgados para terceiros fora da nossa equipe.
-                    </p>
-                    <p className="mt-4">
-                        Nos comprometemos a protegê-los e medidas de segurança adequadas foram implementadas para mantê-los seguro.
-                    </p>
-                    <p className="mt-8 text-purple-default">
-                        Se você ficou com alguma dúvida sobre nossa Política de Privacidade, entre em contato conosco pelo{' '}
-                        <a 
-                            href="https://wa.me/5548999694084?text=Oi,%20fiquei%20com%20dúvida%20na%20Política%20de%20Privacidade%20do%20Despertar%2040%2B"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-green-600 underline"
+
+            <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-5 md:ml-20">
+                <div>
+                    <h2 className="text-purple-default mt-5 text-2xl md:w-96">
+                        Inscreva-se:
+                    </h2>
+                    <h2 
+                        className="text-purple-default mt-5 text-base md:w-96"
+                    >
+                        <span
+                            className="underline decoration-purple-default cursor-pointer"
+                            onClick={privacidadeClickedExpand}
                         >
-                            WhatsApp
-                        </a>.
+                            Entenda porque pedimos seus dados!
+                        </span>
+                    </h2>
+                    {privacidadeClicked && (
+                        <div className="mt-4 p-4 mb-4 bg-gray-200 text-gray-700 rounded-lg md:hidden">
+                            <h3 className="text-purple-default font-bold">
+                                Nossa Política de Privacidade:
+                            </h3>
+                            <p className="mt-4">
+                                Levamos sua privacidade e segurança a sério.
+                            </p>
+                            <p className="mt-4">
+                                Seus dados são coletados para melhorar nossa comunicação durante o programa. Eles serão utilizados exclusivamente pela nossa equipe para o contato direto com você via WhatsApp, garantindo a inclusão no grupo exclusivo do programa.
+                            </p>
+                            <p className="mt-4">
+                                Em hipótese alguma, seus dados serão vendidos, compartilhados ou divulgados para terceiros fora da nossa equipe.
+                            </p>
+                            <p className="mt-4">
+                                Nos comprometemos a protegê-los e medidas de segurança adequadas foram implementadas para mantê-los seguro.
+                            </p>
+                            <p className="mt-8 text-purple-default">
+                                Se você ficou com alguma dúvida sobre nossa Política de Privacidade, entre em contato conosco pelo{' '}
+                                <a 
+                                    href="https://wa.me/5548999694084?text=Oi,%20fiquei%20com%20dúvida%20na%20Política%20de%20Privacidade%20do%20Despertar%2040%2B"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-green-600 underline"
+                                >
+                                    WhatsApp
+                                </a>.
+                            </p>
+                            <button
+                                onClick={privacidadeClickedExpand}
+                                className="mt-4 bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim p-2 px-8"
+                            >
+                                Fechar
+                            </button>
+                        </div>
+                    )}
+
+                    {privacidadeClicked && (
+                        <div className="fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-50 hidden md:flex">
+                            <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg">
+                                <h3 className="text-purple-default font-bold text-xl">
+                                    Nossa Política de Privacidade:
+                                </h3>
+                                <p className="mt-4">
+                                    Levamos sua privacidade e segurança a sério.
+                                </p>
+                                <p className="mt-4">
+                                    Seus dados são coletados para melhorar nossa comunicação durante o programa. Eles serão utilizados exclusivamente pela nossa equipe para o contato direto com você via WhatsApp, garantindo a inclusão no grupo exclusivo do programa.
+                                </p>
+                                <p className="mt-4">
+                                    Em hipótese alguma, seus dados serão vendidos, compartilhados ou divulgados para terceiros fora da nossa equipe.
+                                </p>
+                                <p className="mt-4">
+                                    Nos comprometemos a protegê-los e medidas de segurança adequadas foram implementadas para mantê-los seguro.
+                                </p>
+                                <p className="mt-8 text-purple-default">
+                                    Se você ficou com alguma dúvida sobre nossa Política de Privacidade, entre em contato conosco pelo{' '}
+                                    <a 
+                                        href="https://wa.me/5548999694084?text=Oi,%20fiquei%20com%20dúvida%20na%20Política%20de%20Privacidade%20do%20Despertar%2040%2B"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-green-600 underline"
+                                    >
+                                        WhatsApp
+                                    </a>.
+                                </p>
+                                <button
+                                    onClick={privacidadeClickedExpand}
+                                    className="mt-4 bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim p-2 px-8"
+                                >
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+                    )}
+
+
+                    <form className="flex flex-col justify-center items-center mt-6">
+                        <label> 
+                            Nome completo:
+                        </label>
+                        <input
+                            id="nomeCompleto"
+                            type="text"
+                            value={nomeCompleto}
+                            className="p-2 px-9 rounded-xl bg-purple-light mt-2"
+                            onChange={handleNomeCompletoChange}
+                            minLength={8}
+                            required
+                        />
+                        {errors.nomeCompleto && <p className="text-red-600 text-base">{errors.nomeCompleto}</p>}
+
+                        <label className="mt-3"> 
+                            Seu melhor e-mail:
+                        </label>
+                        <input
+                            id="email"
+                            type="text"
+                            value={email}
+                            className="p-2 px-9 rounded-xl bg-purple-light mt-2"
+                            onChange={handleEmailChange}
+                            minLength={10}
+                            required
+                        />
+                        {errors.email && <p className="text-red-600 text-base">{errors.email}</p>}
+
+                        <label className="mt-3"> 
+                            Seu WhatsApp (com DDD):
+                        </label>
+                        <input
+                            id="whatsapp"
+                            type="tel"
+                            value={whatsapp}
+                            className="p-2 px-9 rounded-xl bg-purple-light mt-2"
+                            onChange={handleWhatsappChange}
+                            required
+                        />
+                        {errors.whatsapp && <p className="text-red-600 text-base">{errors.whatsapp}</p>}
+
+                        <div className="mt-4 ml-4">
+                            <input
+                                id="concordo"
+                                type="checkbox"
+                                checked={concordo}
+                                onChange={handleConcordo}
+                                required
+                            />
+                            <label htmlFor="concordo" className="text-base ml-2">Estou de acordo com a Política de Privacidade</label>
+                            {errors.concordo && <p className="text-red-600 text-base">{errors.concordo}</p>}
+                        </div>
+                    </form>
+
+                    <button
+                        onClick={handleSubmit}
+                        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim mt-6 p-2 px-8">
+                        Quero Transformar Minha Vida!
+                    </button>
+                </div>
+                <div className="md:w-3/6">
+                    <p className="mt-5">
+                        Venha fazer parte do programa que irá mudar seu corpo para o Carnaval.
+                    </p>
+                    <p className="mt-5 bg-yellow-light rounded-lg py-2 px-4">
+                        Pensando no valor que cobraria pelo programa, com tudo que ele oferece, ele poderia custar pelo menos
+                        <span className="font-bold text-purple-default text-2xl"> R$499,00</span>.
+                    </p>
+                    <p className="mt-5">
+                        Como eu quero ajudar você a alcançar seu corpo dos sonhos para o Carnaval, minha equipe e eu chegamos em um valor mais acessível.
+                    </p>
+                    <div className="mt-5 bg-yellow-light rounded-lg py-2 px-4">
+                        <p>
+                            <span className="underline decoration-purple-default text-2xl font-bold">Por apenas</span>
+                        </p>
+                        <p className="mt-2 mb-2">
+                            <span className="text-purple-default text-2xl font-bold">R$159,99</span> 
+                        </p>
+                        <p>
+                            <span className="text-xl font-bold">ou</span>
+                        </p>
+                        <p className="mt-2 mb-2">
+                            <span className="text-purple-default text-2xl font-bold">6 x de R$29,99</span> 
+                        </p>
+                        <p>
+                            você terá acesso a matéria exclusivos, cardápios especiais, dicas práticas e <spam className="text-purple-default text-2xl">o meu suporte profissional</spam>.
+                        </p>
+                    </div>
+                    
+                    <p className="mt-5">
+                        As vagas são limitadas, não perca essa chance!!.
                     </p>
                 </div>
-            )}
-            <form className="flex flex-col justify-center items-center mt-6">
-                <label> 
-                    Nome completo:
-                </label>
-                <input
-                    id="nomeCompleto"
-                    type="text"
-                    value={nomeCompleto}
-                    className="p-2 px-9 rounded-xl bg-purple-light mt-2"
-                    onChange={handleNomeCompletoChange}
-                    minLength={8}
-                    required
-                />
-                {errors.nomeCompleto && <p className="text-red-600 text-base">{errors.nomeCompleto}</p>}
-
-                <label className="mt-3"> 
-                    Seu melhor e-mail:
-                </label>
-                <input
-                    id="email"
-                    type="text"
-                    value={email}
-                    className="p-2 px-9 rounded-xl bg-purple-light mt-2"
-                    onChange={handleEmailChange}
-                    minLength={10}
-                    required
-                />
-                {errors.email && <p className="text-red-600 text-base">{errors.email}</p>}
-
-                <label className="mt-3"> 
-                    Seu WhatsApp (com DDD):
-                </label>
-                <input
-                    id="whatsapp"
-                    type="tel"
-                    value={whatsapp}
-                    className="p-2 px-9 rounded-xl bg-purple-light mt-2"
-                    onChange={handleWhatsappChange}
-                    required
-                />
-                {errors.whatsapp && <p className="text-red-600 text-base">{errors.whatsapp}</p>}
-
-                <div className="mt-4 ml-4">
-                    <input
-                        id="concordo"
-                        type="checkbox"
-                        checked={concordo}
-                        onChange={handleConcordo}
-                        required
-                    />
-                    <label htmlFor="concordo" className="text-base ml-2">Estou de acordo com a Política de Privacidade</label>
-                    {errors.concordo && <p className="text-red-600 text-base">{errors.concordo}</p>}
-                </div>
-            </form>
-
-            <button
-                onClick={handleSubmit}
-                className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim mt-6 p-2 px-8">
-                Quero Transformar Minha Vida!
-            </button>
-
+            </div>
+            
+            
             <h2 className="font-italianno text-6xl mt-5">
                 Faltam <span className="text-yellow-dark"> {daysRemaing} </span>dias para começar a mudança na sua vida!
             </h2>
