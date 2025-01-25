@@ -10,7 +10,7 @@ const RegistrationSection = ({ id }) => {
     const [email, setEmail] = useState('');
     const [whatsapp, setWhatsapp] = useState('');
 
-    // const [cadastrarClicked, setCadastrarClicked] = useState(false);
+    const [cadastrarClicked, setCadastrarClicked] = useState(false);
 
     const [privacidadeClicked, setPrivacidadeClicked] = useState(false);
 
@@ -102,16 +102,16 @@ const RegistrationSection = ({ id }) => {
 
         if (valid) {
             try{
-                // setCadastrarClicked(true);
+                setCadastrarClicked(true);
 
-                const response = await fetch('/api/proxy', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ nomeCompleto, email, whatsapp })
-                  });
+                // const response = await fetch('/api/proxy', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify({ nomeCompleto, email, whatsapp })
+                //   });
 
-                const data = await response.json();
-                console.log('Dados enviados com sucesso:', data.message);
+                // const data = await response.json();
+                // console.log('Dados enviados com sucesso:', data.message);
             } catch (error) {
                 console.error('Erro ao enviar os dados:', error);
             }
@@ -279,12 +279,27 @@ const RegistrationSection = ({ id }) => {
                             {errors.concordo && <p className="text-red-600 text-base">{errors.concordo}</p>}
                         </div>
                     </form>
+                    
+                    <div className="flex flex-col justify-center items-center">
+                        {!cadastrarClicked && (
+                            <>
+                                <button
+                                    onClick={handleSubmit}
+                                    className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim mt-6 p-2 px-8">
+                                    Quero Transformar Minha Vida!
+                                </button>
+                            </>
+                        )}
 
-                    <button
-                        onClick={handleSubmit}
-                        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 rounded-lg font-itim mt-6 p-2 px-8">
-                        Quero Transformar Minha Vida!
-                    </button>
+                        {cadastrarClicked && (
+                            <>
+                                <div
+                                    className="h-12 w-12 border-4 border-t-white  border-b-white border-l-white border-r-purple-default 
+                                            animate-spin rounded-full ease-linear mt-6">
+                                </div>
+                            </>
+                        )}
+                    </div>
                 </div>
                 <div className="md:w-3/6">
                     <p className="mt-5">
