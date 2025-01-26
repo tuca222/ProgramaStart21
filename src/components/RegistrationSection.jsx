@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
 import "@fontsource/italianno"
@@ -11,6 +12,8 @@ const RegistrationSection = ({ id }) => {
     const [whatsapp, setWhatsapp] = useState('');
 
     const [cadastrarClicked, setCadastrarClicked] = useState(false);
+
+    const navigate = useNavigate()
 
     const [privacidadeClicked, setPrivacidadeClicked] = useState(false);
 
@@ -104,14 +107,17 @@ const RegistrationSection = ({ id }) => {
             try{
                 setCadastrarClicked(true);
 
-                const response = await fetch('/api/proxy', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ nomeCompleto, email, whatsapp })
-                  });
+                // const response = await fetch('/api/proxy', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify({ nomeCompleto, email, whatsapp })
+                //   });
 
-                const data = await response.json();
-                console.log('Dados enviados com sucesso:', data.message);
+                // const data = await response.json();
+                // console.log('Dados enviados com sucesso:', data.message);
+
+                navigate("/pagamento")
+
             } catch (error) {
                 console.error('Erro ao enviar os dados:', error);
             }
@@ -326,7 +332,7 @@ const RegistrationSection = ({ id }) => {
                             <span className="text-purple-default text-2xl font-bold">6 x de R$29,99</span> 
                         </p>
                         <p>
-                            você terá acesso a matéria exclusivos, cardápios especiais, dicas práticas e <spam className="text-purple-default text-2xl">o meu suporte profissional</spam>.
+                            você terá acesso a matéria exclusivos, cardápios especiais, dicas práticas e <span className="text-purple-default text-2xl">o meu suporte profissional</span>.
                         </p>
                     </div>
                     

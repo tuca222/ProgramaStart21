@@ -1,13 +1,21 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage';
+import Payment from './components/Payment';
 import './App.css';
 
 function App() {
   return (
-    <div className="App bg-white">
-      <LandingPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/pagamento" element={<Payment/>}/>
+      </Routes>
+    </Router>
+    // <div className="App bg-white">
+    //   <LandingPage />
+    // </div>
   );
 }
 

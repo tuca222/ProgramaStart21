@@ -16,7 +16,7 @@ const IntroductionSection = () => {
 
         <div className="font-inria m-5 md:order-3 md:w-80">
           <h1 className="mt-4 mb-6 text-3xl md:mb-20 md:text-4xl">
-            Emagreça em 21 dias para o Carnaval!!!
+            Transforme seu dia em 21 dias para o Carnaval!!!
           </h1>
           <p className="mt-4 mb-6 text-2xl">
             Do dia

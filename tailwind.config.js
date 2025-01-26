@@ -26,8 +26,14 @@ module.exports = {
           light: 'rgba(47, 189, 18, 0.30)', // Verde Bem Claro
           default: 'rgba(47, 189, 18, 0.75)', // Verde Claro
           dark: '#2FBD12', // Verde
-
         },
+        payment:{
+          background: '#AB8BAB',
+          background_btn_footer:'#8403AB',
+          background_box:'#754F74',
+          txt_line_border: '#2C032B',
+          text_btn_footer:'#D2D613',
+        }
       }
     },
   },
