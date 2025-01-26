@@ -25,7 +25,6 @@ const HeaderSection = () => {
 
         <div className="flex flex-col justify-center items-center mt-28 md:mt-11 md:mb-6">
             <h1 className="text-9xl font-italianno text-purple-default">Start 21</h1>
-            <p className="font-itim text-2xl">Programa de Emagrecimento</p>
             <p className="font-itim mb-6 text-2xl">com Gerusa Lorenzetti</p>
             <a
                 href="#registrationSection"
