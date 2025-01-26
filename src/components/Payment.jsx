@@ -1,12 +1,24 @@
 import React from "react";
-import FooterPayment from "./FooterPayment";
+import HeaderPayment from "./payments/HeaderPayment";
+import ContentPayment from "./payments/ContentPayment";
+import FooterPayment from "./payments/FooterPayment";
 
 
 const Payment = () => {
   return (
-    <div className="bg-payment-background">
+    <div className="payment-page">
+        <header>
+            <HeaderPayment />
+        </header>
 
-        <footer>
+        <hr className="border-t border-payment-txt_line_border my-6 w-5/6 mx-auto md:w-3/4"/>
+
+        <main>
+            <ContentPayment />
+        </main>
+
+
+        <footer className="mt-auto">
             <FooterPayment />
         </footer>
     </div> 

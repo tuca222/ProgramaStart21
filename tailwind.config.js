@@ -30,6 +30,7 @@ module.exports = {
         payment:{
           background: '#AB8BAB',
           background_btn_footer:'#8403AB',
+          background_btn_footer_dark:'#830281',
           background_box:'#754F74',
           txt_line_border: '#2C032B',
           text_btn_footer:'#D2D613',

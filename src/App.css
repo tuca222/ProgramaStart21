@@ -49,3 +49,10 @@ html {
   animation: breathing 2s ease-in-out infinite;
 }
 
+.payment-page {
+  background-color: #AB8BAB; /* Substitua pela cor desejada */
+  min-height: 100vh; /* Garante que a cor de fundo cubra toda a altura da página */
+  display: flex;
+  flex-direction: column;
+}
+
