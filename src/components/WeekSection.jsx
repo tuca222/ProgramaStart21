@@ -75,7 +75,7 @@ const WeekSection = () => {
                 className="w-28 h-28 rounded-full ml-4 mr-4"
             />
             <p className="md:w-96">
-                Na última semana, o foco está em criar hábitos que você pode levar para a vida toda.
+                Na última semana, o foco está em criar hábitos que você pode levar para a vida toda de maneira duradoura.
             </p>
             <p className="md:w-96">
                 Com um cardápio prático e equilibrado, sem muitas restrições, você aprenderá a manter uma rotina leve e sustentável.

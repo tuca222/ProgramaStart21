@@ -4,6 +4,8 @@ import "@fontsource/inria-sans"
 import FotoIntro from "../assets/images/FotoIntro.png";
 
 const IntroductionSection = () => {
+  // const iframeSrc = "https://youtube.com/embed/oQGL6OHHLNs";
+
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col md:flex-row justify-center items-center md:gap-20">
@@ -27,14 +29,27 @@ const IntroductionSection = () => {
           </p>
         </div>
 
+
         <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[300px] h-[500px] rounded-lg mb-6 md:order-2">
           VÍDEO
+
+          {/* <iframe
+              id="iframe-responsivo"
+              title="Start 21 - Vídeo Explicativo"
+              src={iframeSrc}
+              className="h-full rounded-lg shadow-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+          >
+          </iframe> */}
+
         </div>
       </div>
 
       <a
         href="#ComoIraFuncionar"
-        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6">
+        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 md:ml-16">
         Quero Participar Agora!
       </a>
 

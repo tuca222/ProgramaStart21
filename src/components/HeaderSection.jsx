@@ -48,7 +48,7 @@ const HeaderSection = () => {
                         OFERTA ESPECIAL VÁLIDA APENAS PARA O INÍCIO DE 2025!
                     </h2>
                     <p className="mt-2">
-                        FALTAM <span className="text-purple-dark">{daysRemaing}</span> DIAS PARA O INÍCIO DO PROGRAMA!
+                        FALTAM <span className="text-purple-dark">{daysRemaing}</span> DIAS PARA A <span className="text-purple-dark">MUDANÇA</span> QUE VOCÊ MERECE!
                         {/* <CountdownTimer targetDate={targetDate} /> */}
                     </p>
                 </div>
