@@ -41,7 +41,7 @@ const RegistrationSection = ({ id }) => {
     };
 
     const handleEmailChange = (event) => {
-        let valueEmail = event.target.value;
+        let valueEmail = event.target.value.toLowerCase();
         setEmail(valueEmail);
         const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (regexEmail.test(valueEmail) && valueEmail.length <= 50) {
@@ -142,7 +142,7 @@ const RegistrationSection = ({ id }) => {
             <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-5 md:ml-20">
                 <div>
                     <h2 className="text-purple-default mt-5 text-2xl md:w-96">
-                        Suas Informações:
+                        Suas Informações
                     </h2>
                     <h2 
                         className="text-purple-default mt-5 text-base md:w-96"

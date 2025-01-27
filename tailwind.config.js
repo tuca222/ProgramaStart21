@@ -11,6 +11,9 @@ module.exports = {
         itim: ["Itim", "cursive"], // Define a fonte Itim
         inria: ["Inria Sans", "sans-serif"], // Define a fonte Inria Sans
       },
+      boxShadow: {
+        'right-lg': '10px 0 20px rgba(0, 0, 0, 0.5)',
+      },
       colors: {
         purple: {
           light: 'rgba(156, 0, 154, 0.19)', // Roxo Claro

@@ -1,53 +1,89 @@
 import React from "react";
 import "@fontsource/italianno";
 import "@fontsource/inria-sans"
-import Week from '../assets/images/Week.png';
-
+import FocoTotal from '../assets/images/FocoTotal.png';
+import SemPerderORitmo from '../assets/images/SemPerderORitmo.png';
+import RumoAConsistencia from '../assets/images/RumoAConsistencia.png';
 
 const WeekSection = () => {
   return (
-    <div className="font-inria text-xl md:flex md:flex-row md:items-center flex flex-col items-center justify-center md:gap-5">         
+    <div className="font-inria text-xl flex flex-col items-center justify-center md:gap-5">         
       <div>
-        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto md:m-6 md:ml-60">
+        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto">
           <p className="mt-6 mb-4">Prepare-se para o Carnaval com um programa único e estruturado que combina nutrição, exercícios e organização.</p>
           <p className="mt-5 mb-4">Você tera o suporte necessário para alcançar resultados sustentáveis!</p>
         </div>
       </div>
-      <div className="md:flex md:flex-col md:justify-center md:items-center">
-        <div className="flex justify-center items-center m-2 mb-9">
-          <div className="text-purple-default w-[150px] h-[150px] px-3 py-7 mx-auto">
+      <div className="flex md:flex-row md:justify-center md:items-center flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 ">
+          <div className="text-purple-default mx-auto">
             <p className="font-italianno text-6xl">Semana 1</p>
+            <p className="underline font-bold">Foco Total!</p>
           </div>
+          <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
+          <img
+                src={FocoTotal}
+                alt="Imagem Semana 1 - queimando a sua gordura."
+                className="w-28 h-28 rounded-full ml-4 mr-4"
+            />
           <p className="md:w-96">
-            Foco Total! Melhorar seu metabolismo otimizando a queima de gordura.
+            Nessa primeira semana, você dará o pontapé inicial na transformação do seu corpo e saúde.
+          </p>
+          <p className="md:w-96">
+            O objetivo é acelerar o metabolismo, ativar a queima de gordura e preparar seu organismo para as próximas etapas.
+          </p>
+          <p className="md:w-96">
+            Com cardápios estratégicos, dicas práticas e foco total, você começará a sentir os primeiros resultados enquanto ganha mais energia e disposição!
           </p>
         </div>
 
-        <div className="flex justify-center items-center m-2 mb-9">
-          <div className="text-purple-default  w-[150px] h-[150px] px-3 py-7 mx-auto">
+        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
+          <div className="text-purple-default mx-auto">
             <p className="font-italianno text-6xl">Semana 2</p>
+            <p className="underline font-bold">Sem Perder o Ritmo!</p>
           </div>
+          <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
+          <img
+                src={SemPerderORitmo}
+                alt="Imagem Semana 2 - planejando sua rotina."
+                className="w-28 h-28 rounded-full ml-4 mr-4"
+            />
           <p className="md:w-96">
-            Sem Perder o Ritmo! Organização e planejamento, controle diário e dicas de treino. 💪💪💪
+            Essa semana é dedicada a manter o foco enquanto você aperfeiçoa sua rotina.
+          </p>
+          <p className="md:w-96">
+            Com organização e planejamento, você aprenderá a ter mais controle sobre sua alimentação e hábitos diários.
+          </p>
+          <p className="md:w-96">
+            Além disso, as dicas de treino vão ajudar a intensificar os resultados, garantindo disposição e motivação para continuar firme no programa!
+          </p>
+          <p  className="md:w-96">
+            💪💪💪
           </p>
           
         </div>
 
-        <div className="flex justify-center items-center m-2 mb-9">
-          <div className="text-purple-default w-[150px] h-[150px] px-3 py-7 mx-auto">
-            <p className="font-italianno text-6xl">Semana 3</p>
-          </div>
-          <p className="md:w-96">
-            Rumo à Consistência! Adote uma rotina leve e sustentável com um cardápio prático e sem muitas restrições.
-          </p>
+        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
+            <div className="text-purple-default mx-auto">
+                <p className="font-italianno text-6xl">Semana 3</p>
+                <p className="underline font-bold">Rumo à Consistência!</p>
+            </div>
+            <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
+            <img
+                src={RumoAConsistencia}
+                alt="Imagem Semana 3 - rumo à consistência."
+                className="w-28 h-28 rounded-full ml-4 mr-4"
+            />
+            <p className="md:w-96">
+                Na última semana, o foco está em criar hábitos que você pode levar para a vida toda.
+            </p>
+            <p className="md:w-96">
+                Com um cardápio prático e equilibrado, sem muitas restrições, você aprenderá a manter uma rotina leve e sustentável.
+            </p>
+            <p className="md:w-96">
+                Essa é a etapa em que consolidamos tudo o que foi trabalhado, garantindo que você continue colhendo os benefícios muito além dos 21 dias!
+            </p>
         </div>
-      </div>
-      <div className="md:mt-[-150px]  hidden md:block">
-        <img
-            src={Week}
-            alt="Imagem de um planner"
-            className="rounded-xl object-cover w-full h-full shadow-xl transform rotate-6"
-        />
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ const FaqSection = () => {
     },
     {
       question: 'Como irei para a Comunidade do Whats?',
-      answer: 'Após seu pagamento ser confirmado, você receberá um e-mail com todas as informações que você precisa e com o link do grupo. Além disso, a minha equipe entrará em contato com você para te conhecer melhor, com o intuito de ajudarmos você, de forma personalizada,a maximizar os seus resultados.',
+      answer: 'Após seu pagamento ser confirmado, você receberá um e-mail com todas as informações que você precisa e com o link do grupo. Além disso, a minha equipe entrará em contato com você para te conhecer melhor, com o intuito de ajudarmos você, de forma personalizada, a maximizar os seus resultados.',
     },
     {
       question: 'Posso reembolsar?',

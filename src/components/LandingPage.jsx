@@ -25,7 +25,7 @@ const LandingPage = () => {
                 <IntroductionSection />
 
                 <hr className="border-t border-black my-4 w-3/4 mx-auto"/>
-
+                
                 <WeekSection />
 
                 <hr className="border-t border-black my-4 w-3/4 mx-auto mb-6"/>
