@@ -21,7 +21,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="md:w-96 object-cover transform -rotate-12 md:ml-10 w-20"
+                  className="md:w-96 object-cover transform -rotate-12 md:ml-10 w-48"
                 />
             </div>
             {/* <div>
@@ -41,13 +41,13 @@ const HeaderSection = () => {
                 </svg>
             </div> */}
 
-            <div className="flex flex-col justify-center items-center md:mt-11 md:mb-6 mt-5">
+            <div className="flex flex-col justify-center items-center md:mt-11 md:mb-6 mt-2">
                 <div className="text-center p-1 font-bold">
                     <h2 className="md:text-4xl text-sm px-5">
                         {/* Oferta especial de início de ano!!! */}
                         OFERTA ESPECIAL VÁLIDA APENAS PARA O INÍCIO DE 2025!
                     </h2>
-                    <p>
+                    <p className="mt-2">
                         FALTAM <span className="text-purple-dark">{daysRemaing}</span> DIAS PARA O INÍCIO DO PROGRAMA!
                         {/* <CountdownTimer targetDate={targetDate} /> */}
                     </p>
@@ -65,7 +65,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="md:w-96 object-cover transform -rotate-12 md:mr-10 w-20"
+                  className="md:w-96 object-cover transform -rotate-12 md:mr-10 w-48"
                 />
             </div>
 

@@ -10,7 +10,7 @@ const IntroductionSection = () => {
         <img
           src={FotoIntro}
           alt="Foto da Nutricionista Gerusa Lorenzetti fazendo exercício"
-          className="mx-auto object-cover w-96 md:order-3"
+          className="mx-auto object-cover md:w-96 md:order-3 w-72"
         />
 
         <div className="flex flex-col justify-between md:gap-20 font-inria m-5 md:order-1 md:w-96 gap-5">
