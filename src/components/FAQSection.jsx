@@ -17,25 +17,25 @@ const FaqSection = () => {
     },
     {
       question: 'Quando é o início do programa e qual a sua duração?',
-      answer: 'O programa inicia oficialmente no dia 08 de fevereiro de2025 e tem duração de 21 dias, mas, assim que o seu pagamento for confirmado, eu e minha equipe já iremos estar com você. Então, durante os dias 08/02 a 28/02 você está se comprometendo a ser a mudança que a sua vida precisa e eu e minha equipe estaremos juntos com você.',
+      answer: 'O programa tem início no dia 08 de Fevereiro e tem duração de 21 dias, finalizando dia 28 de Fevereiro.',
     },
     {
       question: 'Como irá funcionar?',
       answer: 'O Start 21 será um programa de 21 dias onde teremos lives, acompanhamento personalizado, cardápios estilizados e muitas dicas. Durante esse período eu e minha equipe nos comprometemos a estar com você todos os dias. Iremos te ajudar nesse processo, aquietando todas as suas dúvidas e te ajudando a alcançar o melhor resultado para o Carnaval.',
     },
     {
-      question: 'Como irei para o Grupo do Whats?',
-      answer: 'Após seu pagamento ser confirmado, você receberá um e-mail com todas as informações que você precisa e com o link do grupo. Além disso, alguém da minha equipe irá entrar em contato com você pelo Whats para te conhecer um pouco melhor, garantindo assim o melhor resultado.',
+      question: 'Como irei para a Comunidade do Whats?',
+      answer: 'Após seu pagamento ser confirmado, você receberá um e-mail com todas as informações que você precisa e com o link do grupo. Além disso, a minha equipe entrará em contato com você para te conhecer melhor, com o intuito de ajudarmos você, de forma personalizada,a maximizar os seus resultados.',
     },
     {
-      question: 'Irá ter reembolso?',
-      answer: 'Assim que o seu pagamento for confirmado, eu e minha equipe já estaremos fazendo tudo para te dar o melhor atendimento, então o Start 21 não terá reembolso. Por isso, tenha certeza de que você está comprometido ou comprometida com a sua transformação e que você irá seguir todas as orientações que serão passadas.',
+      question: 'Posso reembolsar?',
+      answer: 'Assim que seu pagamento for confirmado, eu e minha equipe já estaremos  comprometidos com a sua transformação, portanto o Programa não será reembolsável. Tendo isso em mente, esteja certo do seu comprometimento para com a mudança de vida que você merece.',
     },
     {
-      question: 'Preciso de ajuda, ainda tenho algumas dúvidas!',
+      question: 'Ainda tenho dúvidas!',
       answer: (
         <>
-          Se você ainda ficou com alguma dúvida, não se preocupe, basta {' '}
+          Não se preocupe, basta {' '}
           <a
             href="https://wa.me/5548999694084?text=Oi,%20preciso%20de%20ajuda%20com%20o%20Start%2021!"
             target="_blank"
@@ -44,7 +44,7 @@ const FaqSection = () => {
           >
             clicar aqui 
           </a>
-          {' '} para falar comigo no Whats.
+          {' '} para falar diretamento comigo.
         </>
       ),
     },

@@ -142,7 +142,7 @@ const RegistrationSection = ({ id }) => {
             <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-5 md:ml-20">
                 <div>
                     <h2 className="text-purple-default mt-5 text-2xl md:w-96">
-                        Inscreva-se:
+                        Suas Informações:
                     </h2>
                     <h2 
                         className="text-purple-default mt-5 text-base md:w-96"
@@ -309,7 +309,7 @@ const RegistrationSection = ({ id }) => {
                 </div>
                 <div className="md:w-3/6">
                     <p className="mt-5 bg-purple-light rounded-lg">
-                        Venha fazer parte do programa que irá mudar seu corpo para o Carnaval.
+                        Venha fazer parte do programa que irá mudar seu estilo de vida.
                     </p>
                     <p className="mt-5 bg-yellow-light rounded-lg py-2 px-4">
                         Pensando no valor que cobraria pelo programa, com tudo que ele oferece, ele poderia custar pelo menos
@@ -335,10 +335,12 @@ const RegistrationSection = ({ id }) => {
                             você terá acesso a matéria exclusivos, cardápios especiais, dicas práticas e <span className="text-purple-default text-2xl">o meu suporte profissional</span>.
                         </p>
                     </div>
+                    <div className="px-9">
+                        <p className="mt-5 bg-purple-default_light rounded-lg text-white font-bold text-3xl breathing">
+                            As vagas são limitadas, não perca essa chance!!
+                        </p>
+                    </div>
                     
-                    <p className="mt-5 bg-purple-default_light rounded-lg text-white font-bold text-2xl">
-                        As vagas são limitadas, não perca essa chance!!
-                    </p>
                 </div>
             </div>
             
