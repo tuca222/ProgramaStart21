@@ -17,7 +17,6 @@ const Payment = () => {
             <ContentPayment />
         </main>
 
-
         <footer className="mt-auto">
             <FooterPayment />
         </footer>

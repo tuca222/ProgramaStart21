@@ -63,13 +63,13 @@ const RegistrationSection = ({ id }) => {
         }
     };
 
-    const targetDate = new Date('2025-02-08')
+    // const targetDate = new Date('2025-02-08')
 
-    const currentDate = new Date()
+    // const currentDate = new Date()
 
-    const timeDifference= targetDate - currentDate
+    // const timeDifference= targetDate - currentDate
 
-    const daysRemaing = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
+    // const daysRemaing = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -308,14 +308,14 @@ const RegistrationSection = ({ id }) => {
                     </div>
                 </div>
                 <div className="md:w-3/6">
-                    <p className="mt-5">
+                    <p className="mt-5 bg-purple-light rounded-lg">
                         Venha fazer parte do programa que irá mudar seu corpo para o Carnaval.
                     </p>
                     <p className="mt-5 bg-yellow-light rounded-lg py-2 px-4">
                         Pensando no valor que cobraria pelo programa, com tudo que ele oferece, ele poderia custar pelo menos
                         <span className="font-bold text-purple-default text-2xl"> R$499,00</span>.
                     </p>
-                    <p className="mt-5">
+                    <p className="mt-5 bg-purple-light rounded-lg px-1">
                         Como eu quero ajudar você a alcançar seu corpo dos sonhos para o Carnaval, minha equipe e eu chegamos em um valor mais acessível.
                     </p>
                     <div className="mt-5 bg-yellow-light rounded-lg py-2 px-4">
@@ -323,29 +323,28 @@ const RegistrationSection = ({ id }) => {
                             <span className="underline decoration-purple-default text-2xl font-bold">Por apenas</span>
                         </p>
                         <p className="mt-2 mb-2">
-                            <span className="text-purple-default text-2xl font-bold">R$159,99</span> 
+                            <span className="text-purple-default text-2xl font-bold">R$167,90</span> 
                         </p>
                         <p>
                             <span className="text-xl font-bold">ou</span>
                         </p>
                         <p className="mt-2 mb-2">
-                            <span className="text-purple-default text-2xl font-bold">6 x de R$29,99</span> 
+                            <span className="text-purple-default text-2xl font-bold">3 x de R$63,96</span> 
                         </p>
                         <p>
                             você terá acesso a matéria exclusivos, cardápios especiais, dicas práticas e <span className="text-purple-default text-2xl">o meu suporte profissional</span>.
                         </p>
                     </div>
                     
-                    <p className="mt-5">
-                        As vagas são limitadas, não perca essa chance!!.
+                    <p className="mt-5 bg-purple-default_light rounded-lg text-white font-bold text-2xl">
+                        As vagas são limitadas, não perca essa chance!!
                     </p>
                 </div>
             </div>
             
-            
-            <h2 className="font-italianno text-6xl mt-5">
+            {/* <h2 className="font-italianno text-6xl mt-5">
                 Faltam <span className="text-yellow-dark"> {daysRemaing} </span>dias para começar a mudança na sua vida!
-            </h2>
+            </h2> */}
         </div>
     );
 };

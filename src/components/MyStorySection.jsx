@@ -31,7 +31,7 @@ const MyStorySection = () => {
         </div>
         <div>
             <a
-                href="#registrationSection"
+                href="#Participe"
                 className="bg-yellow-default hover:bg-yellow-dark text-purple-dark w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 transition duration-300"
                 >
                 Faça parte do Start 21!

@@ -20,7 +20,7 @@ const FaqSection = () => {
       answer: 'O programa inicia oficialmente no dia 08 de fevereiro de2025 e tem duração de 21 dias, mas, assim que o seu pagamento for confirmado, eu e minha equipe já iremos estar com você. Então, durante os dias 08/02 a 28/02 você está se comprometendo a ser a mudança que a sua vida precisa e eu e minha equipe estaremos juntos com você.',
     },
     {
-      question: 'Como irá funciona?',
+      question: 'Como irá funcionar?',
       answer: 'O Start 21 será um programa de 21 dias onde teremos lives, acompanhamento personalizado, cardápios estilizados e muitas dicas. Durante esse período eu e minha equipe nos comprometemos a estar com você todos os dias. Iremos te ajudar nesse processo, aquietando todas as suas dúvidas e te ajudando a alcançar o melhor resultado para o Carnaval.',
     },
     {
@@ -65,7 +65,7 @@ const FaqSection = () => {
                       className="object-cover rounded-xl w-[350px] h-[457px] mx-auto mb-6"
                       >
                   </img>
-                  <div className="space-y-4 px-4 py-2 bg-purple-light w-[350px] rounded-md">
+                  <div className="space-y-4 px-4 py-2 bg-purple-default_light w-[350px] rounded-md">
                       {faqs.map((faq, index) => (
                       <div
                           key={index}
@@ -76,13 +76,13 @@ const FaqSection = () => {
                               className="w-full text-left text-xl focus:outline-none flex justify-between items-center"
                           >
                               {faq.question}
-                              <span className="text-2xl text-right px-2">
+                              <span className="text-2xl text-right font-bold px-2">
                                   {openFaq === index ? '-' : '+'}
                               </span>
                           </button>
                       {/* Exibe a resposta se a FAQ estiver aberta */}
                           {openFaq === index && (
-                          <p className="mt-3 text-gray-700 text-left">
+                          <p className="mt-3 text-white font-bold font-sans text-left">
                               {faq.answer}
                           </p>
                           )}
@@ -92,7 +92,7 @@ const FaqSection = () => {
                 </div>
                 <div className='mt-12 mb-8'>
                     <a
-                        href="#registrationSection"
+                        href="#Participe"
                         className="bg-yellow-default hover:bg-yellow-dark text-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 "
                         >
                         Garanta a sua vaga!!
