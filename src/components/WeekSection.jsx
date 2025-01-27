@@ -6,9 +6,9 @@ import Week from '../assets/images/Week.png';
 
 const WeekSection = () => {
   return (
-    <div className="font-inria text-xl md:flex md:flex-row md:items-center md:gap-5">         
+    <div className="font-inria text-xl md:flex md:flex-row md:items-center flex flex-col items-center justify-center md:gap-5">         
       <div>
-        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto m-6 ml-60">
+        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto md:m-6 md:ml-60">
           <p className="mt-6 mb-4">Prepare-se para o Carnaval com um programa único e estruturado que combina nutrição, exercícios e organização.</p>
           <p className="mt-5 mb-4">Você tera o suporte necessário para alcançar resultados sustentáveis!</p>
         </div>
@@ -42,7 +42,7 @@ const WeekSection = () => {
           </p>
         </div>
       </div>
-      <div className="md:mt-[-150px] md:ml-12">
+      <div className="md:mt-[-150px]  hidden md:block">
         <img
             src={Week}
             alt="Imagem de um planner"

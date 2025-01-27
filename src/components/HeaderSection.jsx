@@ -21,7 +21,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="w-96 object-cover transform -rotate-12 ml-10"
+                  className="md:w-96 object-cover transform -rotate-12 md:ml-10 w-20"
                 />
             </div>
             {/* <div>
@@ -41,17 +41,17 @@ const HeaderSection = () => {
                 </svg>
             </div> */}
 
-            <div className="flex flex-col justify-center items-center mt-28 md:mt-11 md:mb-6">
-                <div className="text-center p-1">
-                    <h2 className="text-4xl">
+            <div className="flex flex-col justify-center items-center md:mt-11 md:mb-6 mt-5">
+                <div className="text-center p-1 font-bold">
+                    <h2 className="md:text-4xl text-sm">
                         Oferta especial de início de ano!!!
                     </h2>
                     <p>
                         {daysRemaing} dias - <CountdownTimer targetDate={targetDate} />
                     </p>
                 </div>
-                <h1 className="text-9xl font-italianno text-purple-default">Start 21</h1>
-                <p className="font-itim mb-6 text-2xl">com Gerusa Lorenzetti</p>
+                <h1 className="md:text-9xl text-8xl font-italianno text-purple-default">Start 21</h1>
+                <p className="font-itim mb-6 md:text-2xl text-xl">com Gerusa Lorenzetti</p>
                 <a
                     href="#ComoIraFuncionar"
                     className="bg-purple-default text-white py-4 px-6 font-itim text-xl rounded-lg hover:bg-purple-dark transition duration-300 breathing md:mt-5">
@@ -63,7 +63,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="w-96 object-cover transform rotate-12 mr-10"
+                  className="md:w-96 object-cover transform -rotate-12 md:mr-10 w-20"
                 />
             </div>
 

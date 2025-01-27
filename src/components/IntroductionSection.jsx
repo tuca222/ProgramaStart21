@@ -13,16 +13,13 @@ const IntroductionSection = () => {
           className="mx-auto object-cover w-96 md:order-3"
         />
 
-        <div className="flex flex-col justify-between gap-20 font-inria m-5 md:order-1 md:w-96">
+        <div className="flex flex-col justify-between md:gap-20 font-inria m-5 md:order-1 md:w-96 gap-5">
           <div className="border-2 border-purple-default rounded-lg shadow-2xl h-60 flex justify-center items-center bg-white bg-opacity-40">
             <h1 className="text-3xl md:text-4xl text-center text-shadow-sm">
               Redescubra sua energia e transforme seu corpo em 21 dias!!!
             </h1>
           </div>
-          
-          {/* <p className="mt-4 mb-6 text-2xl font-extrabold text-yellow-dark bg-purple-default p-2 rounded-lg text-shadow-md">
-            Do dia 08 a 28 de fevereiro alcance seus objetivos com um plano personalizado e resultados reais.
-          </p> */}
+
           <p className="mt-4 mb-6 text-2xl font-extrabold p-2 rounded-lg text-shadow">
             Do dia <span className="text-yellow-dark bg-purple-default  rounded-sm px-1">08 a 28 de fevereiro</span> <span> </span>
             alcance seus objetivos com um <span className="text-purple-default bg-yellow-dark rounded-sm px-1">plano personalizado</span> <span> </span>
