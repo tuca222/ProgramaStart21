@@ -13,7 +13,7 @@ const ContentPayment = () => {
 
     const handleButtonClick = () => {
         if(selectedPayment === "PIX") {
-            window.location.href = 'https://www.google.com/'
+            window.location.href = 'https://www.asaas.com/c/z297tfysg8ojbssz'
         } else if(selectedPayment === "Cartão") {
             if (selectedInstallment === "1x") {
                 window.location.href = 'https://youtube.com.br'
@@ -38,7 +38,7 @@ const ContentPayment = () => {
                         onChange={() => handleCheckboxChange('PIX')}
                     />
                     <div className="flex flex-col justify-center items-center">
-                        <p>PIX</p>
+                        <p>PIX ou Boleto</p>
                         <p>R$ 167,90</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ const ContentPayment = () => {
             </div>
             {selectedPayment === "PIX" && (
                 <p className="mt-4 text-center px-5">
-                    Você escolheu o PIX, o valor a vista fica R$ 167,90.
+                    Você escolheu o PIX ou Boleto, o valor a vista fica R$ 167,90.
                 </p>
             )}
             {selectedPayment === "Cartão" && (
