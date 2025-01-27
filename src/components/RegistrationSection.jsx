@@ -107,14 +107,14 @@ const RegistrationSection = ({ id }) => {
             try{
                 setCadastrarClicked(true);
 
-                // const response = await fetch('/api/proxy', {
-                //     method: 'POST',
-                //     headers: { 'Content-Type': 'application/json' },
-                //     body: JSON.stringify({ nomeCompleto, email, whatsapp })
-                //   });
+                const response = await fetch('/api/proxy', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ nomeCompleto, email, whatsapp })
+                  });
 
-                // const data = await response.json();
-                // console.log('Dados enviados com sucesso:', data.message);
+                const data = await response.json();
+                console.log('Dados enviados com sucesso:', data.message);
 
                 navigate("/pagamento")
 
