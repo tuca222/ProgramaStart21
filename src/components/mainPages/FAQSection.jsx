@@ -92,10 +92,10 @@ const FaqSection = () => {
                 </div>
                 <div className='mt-12 mb-8'>
                     <a
-                        href="#Participe"
+                        href="/ParticipeDoStart21"
                         className="bg-yellow-default hover:bg-yellow-dark text-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 "
                         >
-                        Garanta a sua vaga!!
+                        Participe do Start 21!!
                     </a>
                 </div>
             </div>        

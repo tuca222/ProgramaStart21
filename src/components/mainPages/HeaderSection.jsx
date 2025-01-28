@@ -57,7 +57,7 @@ const HeaderSection = () => {
                 <h1 className="md:text-9xl text-8xl font-italianno text-purple-default">Start 21</h1>
                 <p className="font-itim mb-6 md:text-2xl text-xl">com Gerusa Lorenzetti</p>
                 <a
-                    href="#ComoIraFuncionar"
+                    href="/GarantaSuaVaga"
                     className="bg-purple-default text-white py-4 px-6 font-itim text-xl rounded-lg hover:bg-purple-dark transition duration-300 breathing md:mt-5">
                     Garanta sua vaga!
                 </a>

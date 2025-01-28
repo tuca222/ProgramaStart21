@@ -45,7 +45,7 @@ const IntroductionSection = () => {
       </div>
 
       <a
-        href="#ComoIraFuncionar"
+        href="/QueroParticiparAgora"
         className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 md:ml-16">
         Quero Participar Agora!
       </a>
