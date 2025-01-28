@@ -13,7 +13,7 @@ const ContentThanks = () => {
                 <img
                     src={VamosJuntos}
                     alt="Imagem da Nutri Gerusa -- VamosJuntos"
-                    className="h-72 md:h-80 object-cover"
+                    className="h-80 md:h-80 object-cover shadow-2xl"
                 />
             </div>     
         </section>

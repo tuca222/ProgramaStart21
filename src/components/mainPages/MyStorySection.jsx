@@ -6,7 +6,7 @@ import FotoMinhaHistoria from '../../assets/images/FotoMinhaHistoria.png';
 
 const MyStorySection = () => {
   return (
-    <div className="font-inria flex flex-col justify-center items-center">
+    <div className="font-inria flex flex-col justify-center items-center md:p-10 p-2">
         <h1 className="text-6xl font-italianno text-purple-default">Conheça um pouco da minha história</h1>
         <div className="flex flex-col md:flex-row md:mr-20 md:ml-20 md:mb-10 items-center justify-center">
             <img

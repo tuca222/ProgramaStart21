@@ -15,7 +15,7 @@ import leaves from "../assets/images/leaves.webp";
 const LandingPage = () => {
     return (
         <div className="App bg-repeat bg-auto" style={{backgroundImage: `url(${leaves})`}}>
-            <header className="App-header bg-repeat bg-auto" style={{backgroundImage: `url(${leaves})`}}>
+            <header className="md:p-10 p-2 App-header bg-repeat bg-auto" style={{backgroundImage: `url(${leaves})`}}>
                 <HeaderSection />
             </header>
             

@@ -51,7 +51,7 @@ const FaqSection = () => {
   ];
 
   return (
-    <section>
+    <section className='md:p-10 p-2'>
         <div>
         {/* Coluna FAQ */}
             <div className='font-inria flex flex-col justify-center items-center'>

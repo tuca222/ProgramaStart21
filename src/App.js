@@ -34,8 +34,8 @@ function App() {
       <ScrollToSection />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/pagamento" element={<Payment />} />
-        <Route path="/agradecimento" element={<Thanks />} />
+        <Route path="/Pagamento" element={<Payment />} />
+        <Route path="/Agradecimento" element={<Thanks />} />
         <Route path="/GarantaSuaVaga" element={<LandingPage />} />
         <Route path="/QueroParticiparAgora" element={<LandingPage />} />
         <Route path="/ParticipeDoStart21" element={<LandingPage />} />

@@ -8,7 +8,7 @@ const IntroductionSection = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center md:gap-20">
+      <div className="flex flex-col md:flex-row justify-center items-center md:gap-20 md:p-10 p-2">
         <img
           src={FotoIntro}
           alt="Foto da Nutricionista Gerusa Lorenzetti fazendo exercício"
@@ -30,12 +30,12 @@ const IntroductionSection = () => {
         </div>
 
 
-        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[300px] h-[495px] rounded-lg mb-6 md:order-2">
+        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[350px] h-[600px] rounded-lg mb-6 md:order-2">
           <iframe
               id="iframe-responsivo"
               title="Start 21 - Vídeo Explicativo"
               src={iframeSrc}
-              className="h-full rounded-lg shadow-lg"
+              className="h-full w-full rounded-lg shadow-lg"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               loading="lazy"

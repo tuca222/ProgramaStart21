@@ -18,17 +18,17 @@ const ContentPayment = () => {
             paymentURL = 'https://www.asaas.com/c/z297tfysg8ojbssz'
         } else if(selectedPayment === "Cartão") {
             if (selectedInstallment === "1x") {
-                paymentURL = 'https://youtube.com.br'
+                paymentURL = 'https://www.asaas.com/c/ud6ly81c5aebw52z'
             } else if (selectedInstallment === "2x") {
-                paymentURL = 'https://br.pinterest.com/'
+                paymentURL = 'https://www.asaas.com/c/3igsn2k0yygmdg60'
             } else if (selectedInstallment === "3x") {
-                paymentURL = 'https://canva.com'
+                paymentURL = 'https://www.asaas.com/c/55662x0idbf7m6s2'
             }
         }
 
         if (paymentURL){
             window.open(paymentURL, '_blank');
-            window.location.href = '/agradecimento';
+            window.location.href = '/Agradecimento';
         }
     };
 
@@ -72,7 +72,7 @@ const ContentPayment = () => {
             </div>
             {selectedPayment === "PIX" && (
                 <p className="mt-4 text-center px-5">
-                    Você escolheu o PIX ou Boleto, o valor a vista fica R$ 167,90.
+                    Você escolheu o PIX ou Boleto, o valor à vista fica R$ 167,90.
                 </p>
             )}
             {selectedPayment === "Cartão" && (
@@ -88,7 +88,7 @@ const ContentPayment = () => {
                         <option value="">Selecione</option>
                         <option value="1x">1 X de R$ 167,90</option>
                         <option value="2x">2 X de R$ 93,95</option>
-                        <option value="3x">3 X de R$ 63,96</option>
+                        <option value="3x">3 X de R$ 63,97</option>
                     </select>
                 </div>
             )}

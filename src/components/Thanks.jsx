@@ -3,11 +3,12 @@ import Header from "./finalizationsPages/Header";
 import ContentThanks from "./finalizationsPages/ContentThanks";
 import Footer from "./finalizationsPages/Footer";
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import green_cup from "../assets/images/green_cup.webp";
 
 
 const Thanks = () => {
   return (
-    <div className="payment-page">
+    <div className="payment-page App bg-repeat bg-auto" style={{backgroundImage: `url(${green_cup})`}}>
         <header>
             <Header
                 title='<span class="md:text-5xl text-4xl text-white">MUITO OBRIGADA!</span>'

@@ -3,12 +3,14 @@ import Header from "./finalizationsPages/Header";
 import ContentPayment from "./finalizationsPages/ContentPayment";
 import Footer from "./finalizationsPages/Footer";
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import green_cup from "../assets/images/green_cup.webp";
+
 
 
 
 const Payment = () => {
   return (
-    <div className="payment-page">
+    <div className="payment-page App bg-repeat bg-auto" style={{backgroundImage: `url(${green_cup})`}}>
         <header>
             <Header 
                 title="Pagamento Start 21" 

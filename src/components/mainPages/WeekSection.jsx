@@ -7,7 +7,7 @@ import RumoAConsistencia from '../../assets/images/RumoAConsistencia.png';
 
 const WeekSection = () => {
   return (
-    <div className="font-inria text-xl flex flex-col items-center justify-center md:gap-5">         
+    <div className="font-inria text-xl flex flex-col items-center justify-center md:gap-5 md:p-10 p-2">         
       <div>
         <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto">
           <p className="mt-6 mb-4">Prepare-se para o Carnaval com um programa único e estruturado que combina nutrição, exercícios e organização.</p>

@@ -23,7 +23,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="md:w-96 object-cover transform -rotate-12 md:ml-10 w-48"
+                  className="md:w-96 object-cover transform -rotate-12 w-48"
                 />
             </div>
             {/* <div>
@@ -67,7 +67,7 @@ const HeaderSection = () => {
                 <img
                   src={ImagemLogo}
                   alt="Imagem do Logo da Nutri Gerusa."
-                  className="md:w-96 object-cover transform -rotate-12 md:mr-10 w-48"
+                  className="md:w-96 object-cover w-48 transform rotate-12"
                 />
             </div>
 

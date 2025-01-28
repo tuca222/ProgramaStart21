@@ -10,8 +10,8 @@ import PercaPeso from '../../assets/images/beneficios/PercaPeso.png';
 
 const BenefitsSection = () => {
     return (
-      <div className="font-inria text-xl flex justify-center items-center flex-col md:m-10">
-        <div className=" text-purple-default mb-7 mt-7 ml-9 mr-9 mx-auto border-x-4 border-green-light transform skew-x-6 border-y-4 skew-y-6 rounded-lg bg-green-light md:w-96">
+      <div className="font-inria text-xl flex justify-center items-center flex-col md:p-10 p-2">
+        <div className=" text-purple-default mb-9 ml-9 mr-9 mx-auto border-x-4 border-green-light transform skew-x-6 border-y-4 skew-y-6 rounded-lg bg-green-light md:w-96">
             <h1 className="font-italianno text-6xl p-3">
                 Por que escolher o Start 21?
             </h1>

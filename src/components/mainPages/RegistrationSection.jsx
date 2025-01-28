@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
 import "@fontsource/italianno"
@@ -12,7 +12,7 @@ const RegistrationSection = ({ id }) => {
 
     const [cadastrarClicked, setCadastrarClicked] = useState(false);
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const [privacidadeClicked, setPrivacidadeClicked] = useState(false);
 
@@ -107,8 +107,8 @@ const RegistrationSection = ({ id }) => {
                 const data = await response.json();
                 console.log('Dados enviados com sucesso:', data.message);
 
-                // navigate("/pagamento")
-                window.open("/pagamento", "_blank");
+                navigate("/Pagamento")
+                //window.open("/Pagamento", "_blank");
 
             } catch (error) {
                 console.error('Erro ao enviar os dados:', error);
@@ -117,7 +117,7 @@ const RegistrationSection = ({ id }) => {
     }
 
     return (
-        <div id={id} className="font-inria text-xl px-5 md:flex md:flex-col md:items-center md:justify-center mb-10">
+        <div id={id} className="font-inria text-xl px-5 md:flex md:flex-col md:items-center md:justify-center mb-10 md:p-10 p-2">
             <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-4 mt-10">
                 <h1 className="font-italianno font-bold text-6xl text-purple-default">
                     Inscreva-se Agora

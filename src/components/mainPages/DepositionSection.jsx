@@ -9,7 +9,7 @@ import PacienteThaisa from '../../assets/images/pacientes/Thaisa.png';
 
 const DepositionSection = ({ id }) => {
   return (
-    <section id={id} className="">
+    <section id={id} className="md:p-10 p-2">
       <div className="text-center font-inria mb-10">
         <h1 className="font-italianno text-purple-default text-6xl p-3">Depoimentos de Pacientes</h1>
         <div className="flex flex-wrap gap-5 justify-center items-center">          
