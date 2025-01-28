@@ -7,11 +7,13 @@ import ImagemLogo from '../assets/images/ImagemLogo.png';
 
 const HeaderSection = () => {
 
-    const targetDate = new Date('2025-02-08')
+    const targetDate = new Date('2025-02-08T00:00:00-03:00'); // Data alvo ajustada para UTC-3
 
-    const currentDate = new Date()
+    const currentDate = new Date();
+    const utc3Offset = -3 * 60; // UTC-3 em minutos
+    const currentDateUtc3 = new Date(currentDate.getTime() + (currentDate.getTimezoneOffset() + utc3Offset) * 60000);
 
-    const timeDifference= targetDate - currentDate
+    const timeDifference = targetDate - currentDateUtc3;
 
     const daysRemaing = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
 
