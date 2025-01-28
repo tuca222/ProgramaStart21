@@ -4,7 +4,7 @@ import "@fontsource/inria-sans"
 import FotoIntro from "../assets/images/FotoIntro.png";
 
 const IntroductionSection = () => {
-  // const iframeSrc = "https://youtube.com/embed/oQGL6OHHLNs";
+  const iframeSrc = "https://youtube.com/embed/z4KZFi0_ZPU";
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -30,10 +30,8 @@ const IntroductionSection = () => {
         </div>
 
 
-        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[300px] h-[500px] rounded-lg mb-6 md:order-2">
-          VÍDEO
-
-          {/* <iframe
+        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[300px] h-[495px] rounded-lg mb-6 md:order-2">
+          <iframe
               id="iframe-responsivo"
               title="Start 21 - Vídeo Explicativo"
               src={iframeSrc}
@@ -42,8 +40,7 @@ const IntroductionSection = () => {
               allowFullScreen
               loading="lazy"
           >
-          </iframe> */}
-
+          </iframe>
         </div>
       </div>
 
