@@ -117,8 +117,8 @@ const RegistrationSection = ({ id }) => {
     }
 
     return (
-        <div id={id} className="font-inria text-xl px-5 md:flex md:flex-col md:items-center md:justify-center">
-            <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-4">
+        <div id={id} className="font-inria text-xl px-5 md:flex md:flex-col md:items-center md:justify-center mb-10">
+            <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-4 mt-10">
                 <h1 className="font-italianno font-bold text-6xl text-purple-default">
                     Inscreva-se Agora
                 </h1>
