@@ -2,7 +2,7 @@ import React from "react";
 import "@fontsource/italianno";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
-import ImagemLogo from '../assets/images/ImagemLogo.png';
+import ImagemLogo from '../../assets/images/ImagemLogo.png';
 // import CountdownTimer from './CountdownTimer';
 
 const HeaderSection = () => {

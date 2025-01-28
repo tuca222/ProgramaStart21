@@ -1,12 +1,12 @@
 import React from "react";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
-import Cardapio from '../assets/images/beneficios/Cardapio.png';
-import NutriGe from '../assets/images/beneficios/NutricionistaGerusa.png';
-import Exercicios from '../assets/images/beneficios/Exercicios.png';
-import Planejamento from '../assets/images/beneficios/Planejamento.png';
-import WhatsApp from '../assets/images/beneficios/WhatsApp.png';
-import PercaPeso from '../assets/images/beneficios/PercaPeso.png';
+import Cardapio from '../../assets/images/beneficios/Cardapio.png';
+import NutriGe from '../../assets/images/beneficios/NutricionistaGerusa.png';
+import Exercicios from '../../assets/images/beneficios/Exercicios.png';
+import Planejamento from '../../assets/images/beneficios/Planejamento.png';
+import WhatsApp from '../../assets/images/beneficios/WhatsApp.png';
+import PercaPeso from '../../assets/images/beneficios/PercaPeso.png';
 
 const BenefitsSection = () => {
     return (

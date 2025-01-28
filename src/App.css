@@ -56,3 +56,26 @@ html {
   flex-direction: column;
 }
 
+.double-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.double-underline::after,
+.double-underline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+}
+
+.double-underline::before {
+  bottom: 1px; /* Ajuste a distância entre os sublinhados */
+}
+
+.double-underline::after {
+  bottom: -2px; /* Ajuste a distância entre os sublinhados */
+}
+

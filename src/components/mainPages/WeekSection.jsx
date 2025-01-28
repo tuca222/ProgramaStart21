@@ -1,9 +1,9 @@
 import React from "react";
 import "@fontsource/italianno";
 import "@fontsource/inria-sans"
-import FocoTotal from '../assets/images/FocoTotal.png';
-import SemPerderORitmo from '../assets/images/SemPerderORitmo.png';
-import RumoAConsistencia from '../assets/images/RumoAConsistencia.png';
+import FocoTotal from '../../assets/images/FocoTotal.png';
+import SemPerderORitmo from '../../assets/images/SemPerderORitmo.png';
+import RumoAConsistencia from '../../assets/images/RumoAConsistencia.png';
 
 const WeekSection = () => {
   return (

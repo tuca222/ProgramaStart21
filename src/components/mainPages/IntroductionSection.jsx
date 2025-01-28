@@ -1,7 +1,7 @@
 import React from "react";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
-import FotoIntro from "../assets/images/FotoIntro.png";
+import FotoIntro from "../../assets/images/FotoIntro.png";
 
 const IntroductionSection = () => {
   const iframeSrc = "https://youtube.com/embed/z4KZFi0_ZPU";

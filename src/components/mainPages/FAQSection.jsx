@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FotoFAQ from '../assets/images/FotoFAQ.jpg';
+import FotoFAQ from '../../assets/images/FotoFAQ.jpg';
 
 const FaqSection = () => {
   // State para armazenar qual FAQ está aberta

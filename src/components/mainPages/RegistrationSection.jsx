@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import React, { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
 import "@fontsource/italianno"
@@ -13,7 +12,7 @@ const RegistrationSection = ({ id }) => {
 
     const [cadastrarClicked, setCadastrarClicked] = useState(false);
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const [privacidadeClicked, setPrivacidadeClicked] = useState(false);
 
@@ -63,14 +62,6 @@ const RegistrationSection = ({ id }) => {
         }
     };
 
-    // const targetDate = new Date('2025-02-08')
-
-    // const currentDate = new Date()
-
-    // const timeDifference= targetDate - currentDate
-
-    // const daysRemaing = Math.ceil(timeDifference / (1000 * 60 * 60 * 24))
-
     const handleSubmit = async (event) => {
         event.preventDefault();
         let valid = true;
@@ -116,7 +107,8 @@ const RegistrationSection = ({ id }) => {
                 const data = await response.json();
                 console.log('Dados enviados com sucesso:', data.message);
 
-                navigate("/pagamento")
+                // navigate("/pagamento")
+                window.open("/pagamento", "_blank");
 
             } catch (error) {
                 console.error('Erro ao enviar os dados:', error);
@@ -346,11 +338,6 @@ const RegistrationSection = ({ id }) => {
                     
                 </div>
             </div>
-           
-            
-            {/* <h2 className="font-italianno text-6xl mt-5">
-                Faltam <span className="text-yellow-dark"> {daysRemaing} </span>dias para começar a mudança na sua vida!
-            </h2> */}
         </div>
     );
 };

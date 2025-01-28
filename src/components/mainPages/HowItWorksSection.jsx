@@ -1,8 +1,8 @@
 import React from "react";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
-import ComidaNutricionalDireita from '../assets/images/beneficios/ComidaNutricionalDireita.jpg';
-import ComidaNutricional from '../assets/images/beneficios/ComidaNutricional.jpg';
+import ComidaNutricionalDireita from '../../assets/images/beneficios/ComidaNutricionalDireita.jpg';
+import ComidaNutricional from '../../assets/images/beneficios/ComidaNutricional.jpg';
 
 const HowItWorksSection = ({ id }) => {
     return (

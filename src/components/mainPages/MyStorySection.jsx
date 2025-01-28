@@ -2,7 +2,7 @@ import React from "react";
 import "@fontsource/italianno";
 import "@fontsource/itim";
 import "@fontsource/inria-sans"
-import FotoMinhaHistoria from '../assets/images/FotoMinhaHistoria.png';
+import FotoMinhaHistoria from '../../assets/images/FotoMinhaHistoria.png';
 
 const MyStorySection = () => {
   return (

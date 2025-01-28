@@ -12,16 +12,23 @@ const ContentPayment = () => {
     };
 
     const handleButtonClick = () => {
+        let paymentURL = '';
+
         if(selectedPayment === "PIX") {
-            window.location.href = 'https://www.asaas.com/c/z297tfysg8ojbssz'
+            paymentURL = 'https://www.asaas.com/c/z297tfysg8ojbssz'
         } else if(selectedPayment === "Cartão") {
             if (selectedInstallment === "1x") {
-                window.location.href = 'https://youtube.com.br'
+                paymentURL = 'https://youtube.com.br'
             } else if (selectedInstallment === "2x") {
-                window.location.href = 'https://br.pinterest.com/'
+                paymentURL = 'https://br.pinterest.com/'
             } else if (selectedInstallment === "3x") {
-                window.location.href = 'https://canva.com'
+                paymentURL = 'https://canva.com'
             }
+        }
+
+        if (paymentURL){
+            window.open(paymentURL, '_blank');
+            window.location.href = '/agradecimento';
         }
     };
 
@@ -30,8 +37,12 @@ const ContentPayment = () => {
             <p className="text-center px-10 py-2">Você está a um passo de dar um Start na sua transformação!!!</p>
             <p className="text-center py-5">Escolha a sua forma de pagamento:</p>
             <div className="flex flex-row items-center justify-center gap-5 mt-6">
-                <div className="flex flex-row justify-center items-center gap-2 bg-payment-background_box border border-payment-txt_line_border rounded-lg text-center w-40 h-20 md:w-60 md:h-28">
+                <label
+                    htmlFor="pix-checkbox"
+                    className="flex flex-row justify-center items-center gap-2 bg-payment-background_box border border-payment-txt_line_border rounded-lg text-center w-40 h-20 md:w-60 md:h-28 cursor-pointer"
+                >
                     <input
+                        id="pix-checkbox"
                         type="checkbox"
                         className="rounded-full mb-2"
                         checked={selectedPayment === "PIX"}
@@ -41,9 +52,13 @@ const ContentPayment = () => {
                         <p>PIX ou Boleto</p>
                         <p>R$ 167,90</p>
                     </div>
-                </div>
-                <div className="flex flex-row justify-center items-center gap-2 bg-payment-background_box border border-payment-txt_line_border rounded-lg text-center w-40 h-20 md:w-60 md:h-28"> 
+                </label>
+                <label
+                    htmlFor="cartao-checkbox"
+                    className="flex flex-row justify-center items-center gap-2 bg-payment-background_box border border-payment-txt_line_border rounded-lg text-center w-40 h-20 md:w-60 md:h-28 cursor-pointer"
+                >
                     <input
+                        id="cartao-checkbox"
                         type="checkbox"
                         className="rounded-full mb-2"
                         checked={selectedPayment === "Cartão"}
@@ -53,7 +68,7 @@ const ContentPayment = () => {
                         <p>Cartão</p>
                         <p>em até 3 vezes</p>
                     </div>
-                </div>
+                </label>
             </div>
             {selectedPayment === "PIX" && (
                 <p className="mt-4 text-center px-5">

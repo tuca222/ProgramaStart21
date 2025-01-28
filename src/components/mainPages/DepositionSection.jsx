@@ -1,11 +1,11 @@
 import React from 'react';
-import PacienteLuciana from '../assets/images/pacientes/Luciana.png';
-import PacienteGuilherme from '../assets/images/pacientes/Guilherme.png';
-import PacienteSilvana from '../assets/images/pacientes/Silvana.jpg';
-import PacienteMaria from '../assets/images/pacientes/Maria.png';
-import PacienteKarla from '../assets/images/pacientes/Karla.jpg';
-import PacienteMiriam from '../assets/images/pacientes/Miriam.jpg';
-import PacienteThaisa from '../assets/images/pacientes/Thaisa.png';
+import PacienteLuciana from '../../assets/images/pacientes/Luciana.png';
+import PacienteGuilherme from '../../assets/images/pacientes/Guilherme.png';
+import PacienteSilvana from '../../assets/images/pacientes/Silvana.jpg';
+import PacienteMaria from '../../assets/images/pacientes/Maria.png';
+import PacienteKarla from '../../assets/images/pacientes/Karla.jpg';
+import PacienteMiriam from '../../assets/images/pacientes/Miriam.jpg';
+import PacienteThaisa from '../../assets/images/pacientes/Thaisa.png';
 
 const DepositionSection = ({ id }) => {
   return (
