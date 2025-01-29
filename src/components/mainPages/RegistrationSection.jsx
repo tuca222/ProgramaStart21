@@ -130,8 +130,8 @@ const RegistrationSection = ({ id }) => {
                 </h1>
             </div>
             
-            <div className="md:flex md:flex-row md:justify-center md:items-center">
-                <div className="md:w-3/6 md:order-2">
+            <div className="lg:flex lg:flex-row lg:justify-center lg:items-center">
+                <div className="lg:w-3/6 lg:order-2">
                     <p className="mt-5 bg-purple-light rounded-lg">
                         Venha fazer parte do programa que irá mudar seu estilo de vida.
                     </p>
@@ -167,7 +167,7 @@ const RegistrationSection = ({ id }) => {
                     
                 </div>
 
-                <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-5 md:ml-20 md:order-1">
+                <div className="md:flex md:flex-row md:justify-center md:items-center md:gap-5 lg:ml-20 lg:order-1">
                     <div>
                         <h2 className="text-purple-default mt-5 text-2xl md:w-96">
                             Suas Informações

@@ -17,7 +17,7 @@ const BenefitsSection = () => {
             </h1>
         </div>
 
-        <div className="md:flex md:flex-row md:justify-center md:items-center">
+        <div className="xl:flex xl:flex-row md:justify-center md:items-center">
           <div className="flex justify-center items-center m-2 mb-9 gap-4">
             <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
               <img
@@ -54,7 +54,7 @@ const BenefitsSection = () => {
           </div>
           
         </div>
-        <div className="md:flex md:flex-row md:justify-center md:items-center">
+        <div className="xl:flex xl:flex-row md:justify-center md:items-center">
           <div className="flex justify-center items-center m-2 mb-9 gap-4">
             <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
               <img

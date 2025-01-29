@@ -8,14 +8,14 @@ const IntroductionSection = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center md:gap-20 md:p-10 p-2">
+      <div className="flex flex-col lg:flex-row justify-center items-center md:gap-10 md:p-5 lg:p-5 p-2">
         <img
           src={FotoIntro}
           alt="Foto da Nutricionista Gerusa Lorenzetti fazendo exercício"
-          className="mx-auto object-cover md:w-96 md:order-3 w-72"
+          className="mx-auto object-cover md:w-80 lg:order-3 w-72 lg:w-80"
         />
 
-        <div className="flex flex-col justify-between md:gap-20 font-inria m-5 md:order-1 md:w-96 gap-5">
+        <div className="flex flex-col justify-between items-center md:gap-20 font-inria m-5 lg:order-1 md:w-96 gap-5">
           <div className="border-2 border-purple-default rounded-lg shadow-2xl h-60 flex justify-center items-center bg-white bg-opacity-40">
             <h1 className="text-3xl md:text-4xl text-center text-shadow-sm">
               Redescubra sua energia e transforme seu corpo em 21 dias!!!
@@ -30,12 +30,12 @@ const IntroductionSection = () => {
         </div>
 
 
-        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[350px] h-[600px] rounded-lg mb-6 md:order-2">
+        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[350px] h-[600px] rounded-lg mb-6 lg:order-2">
           <iframe
               id="iframe-responsivo"
               title="Start 21 - Vídeo Explicativo"
               src={iframeSrc}
-              className="h-full w-full rounded-lg shadow-lg"
+              className="h-full w-full rounded-lg shadow-lg lg:w-96"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               loading="lazy"

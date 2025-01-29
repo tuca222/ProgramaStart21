@@ -8,13 +8,13 @@ const MyStorySection = () => {
   return (
     <div className="font-inria flex flex-col justify-center items-center md:p-10 p-2">
         <h1 className="text-6xl font-italianno text-purple-default">Conheça um pouco da minha história</h1>
-        <div className="flex flex-col md:flex-row md:mr-20 md:ml-20 md:mb-10 items-center justify-center">
+        <div className="flex flex-col lg:flex-row lg:mb-10 items-center justify-center xl:mr-10 xl:ml-10">
             <img
                 src={FotoMinhaHistoria}
                 alt="Foto da Nutricionista Gerusa Lorenzetti sentada no chão sem fundo"
-                className="rounded-lg shadow-lg object-cover w-full max-w-sm md:max-w-lg mx-auto md:ml-52"
+                className="rounded-lg shadow-lg object-cover w-full max-w-sm lg:max-w-lg mx-auto xl:ml-40"
             />
-            <div className="m-4 md:mr-52">
+            <div className="m-4 xl:mr-10">
                 <p className="text-lg mb-4 md:text-xl">
                     Me chamo Gerusa Lorenzetti e sou nutricionista, durante toda a minha vida segui dietas restritivas em busca de emagrecimento.
                 </p>

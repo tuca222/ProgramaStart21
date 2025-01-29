@@ -14,56 +14,57 @@ const WeekSection = () => {
           <p className="mt-5 mb-4">Você tera o suporte necessário para alcançar resultados sustentáveis!</p>
         </div>
       </div>
-      <div className="flex md:flex-row md:justify-center md:items-center flex-col justify-center items-center">
-        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 ">
-          <div className="text-purple-default mx-auto">
-            <p className="font-italianno text-6xl">Semana 1</p>
-            <p className="underline font-bold">Foco Total!</p>
+      <div className="flex xl:flex-row xl:justify-center xl:items-center flex-col justify-center items-center">
+        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center">
+          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 lg:max-h-[700px]">
+            <div className="text-purple-default mx-auto">
+              <p className="font-italianno text-6xl">Semana 1</p>
+              <p className="underline font-bold">Foco Total!</p>
+            </div>
+            <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
+            <img
+                  src={FocoTotal}
+                  alt="Imagem Semana 1 - queimando a sua gordura."
+                  className="w-28 h-28 rounded-full ml-4 mr-4"
+              />
+            <p className="md:w-96">
+              Nessa primeira semana, você dará o pontapé inicial na transformação do seu corpo e saúde.
+            </p>
+            <p className="md:w-96">
+              O objetivo é acelerar o metabolismo, ativar a queima de gordura e preparar seu organismo para as próximas etapas.
+            </p>
+            <p className="md:w-96">
+              Com cardápios estratégicos, dicas práticas e foco total, você começará a sentir os primeiros resultados enquanto ganha mais energia e disposição!
+            </p>
           </div>
-          <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
-          <img
-                src={FocoTotal}
-                alt="Imagem Semana 1 - queimando a sua gordura."
-                className="w-28 h-28 rounded-full ml-4 mr-4"
-            />
-          <p className="md:w-96">
-            Nessa primeira semana, você dará o pontapé inicial na transformação do seu corpo e saúde.
-          </p>
-          <p className="md:w-96">
-            O objetivo é acelerar o metabolismo, ativar a queima de gordura e preparar seu organismo para as próximas etapas.
-          </p>
-          <p className="md:w-96">
-            Com cardápios estratégicos, dicas práticas e foco total, você começará a sentir os primeiros resultados enquanto ganha mais energia e disposição!
-          </p>
-        </div>
 
-        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
-          <div className="text-purple-default mx-auto">
-            <p className="font-italianno text-6xl">Semana 2</p>
-            <p className="underline font-bold">Sem Perder o Ritmo!</p>
+          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 lg:py-3">
+            <div className="text-purple-default mx-auto">
+              <p className="font-italianno text-6xl">Semana 2</p>
+              <p className="underline font-bold">Sem Perder o Ritmo!</p>
+            </div>
+            <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
+            <img
+                  src={SemPerderORitmo}
+                  alt="Imagem Semana 2 - planejando sua rotina."
+                  className="w-28 h-28 rounded-full ml-4 mr-4"
+              />
+            <p className="md:w-96">
+              Essa semana é dedicada a manter o foco enquanto você aperfeiçoa sua rotina.
+            </p>
+            <p className="md:w-96">
+              Com organização e planejamento, você aprenderá a ter mais controle sobre sua alimentação e hábitos diários.
+            </p>
+            <p className="md:w-96">
+              Além disso, as dicas de treino vão ajudar a intensificar os resultados, garantindo disposição e motivação para continuar firme no programa!
+            </p>
+            <p  className="md:w-96">
+              💪💪💪
+            </p>
+            
           </div>
-          <hr className="border-t-2 border-gray-500 w-3/4 mx-auto mb-6"/>
-          <img
-                src={SemPerderORitmo}
-                alt="Imagem Semana 2 - planejando sua rotina."
-                className="w-28 h-28 rounded-full ml-4 mr-4"
-            />
-          <p className="md:w-96">
-            Essa semana é dedicada a manter o foco enquanto você aperfeiçoa sua rotina.
-          </p>
-          <p className="md:w-96">
-            Com organização e planejamento, você aprenderá a ter mais controle sobre sua alimentação e hábitos diários.
-          </p>
-          <p className="md:w-96">
-            Além disso, as dicas de treino vão ajudar a intensificar os resultados, garantindo disposição e motivação para continuar firme no programa!
-          </p>
-          <p  className="md:w-96">
-            💪💪💪
-          </p>
-          
         </div>
-
-        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
+        <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 md:mt-1 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
             <div className="text-purple-default mx-auto">
                 <p className="font-italianno text-6xl">Semana 3</p>
                 <p className="underline font-bold">Rumo à Consistência!</p>
