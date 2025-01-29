@@ -36,7 +36,7 @@ const ContentPayment = () => {
         <section className="flex flex-col items-center justify-center font-itim text-payment-txt_line_border text-xl md:text-3xl">
             <p className="text-center px-10 py-2">Você está a um passo de dar um Start na sua transformação!!!</p>
             <p className="text-center py-5">Escolha a sua forma de pagamento:</p>
-            <div className="flex flex-row items-center justify-center gap-5 mt-6">
+            <div className="flex sm:flex-row flex-col items-center justify-center gap-5 mt-6">
                 <label
                     htmlFor="pix-checkbox"
                     className="flex flex-row justify-center items-center gap-2 bg-payment-background_box border border-payment-txt_line_border rounded-lg text-center w-40 h-20 md:w-60 md:h-28 cursor-pointer"
@@ -77,7 +77,7 @@ const ContentPayment = () => {
             )}
             {selectedPayment === "Cartão" && (
                 <div className="flex flex-col items-center">
-                    <p className="mt-4 text-center">
+                    <p className="mt-4 text-center px-2">
                         Você escolheu o Cartão, selecione em quantas vezes você quer fazer:
                     </p>
                     <select
@@ -95,7 +95,7 @@ const ContentPayment = () => {
             {selectedPayment && (
                 <button
                     onClick={handleButtonClick}
-                    className="mt-6 bg-payment-background_btn_footer text-payment-text_btn_footer hover:bg-payment-background_btn_footer_dark transition duration-300 rounded-lg font-itim p-2 px-8"
+                    className="mt-6 bg-payment-background_btn_footer text-payment-text_btn_footer hover:bg-payment-background_btn_footer_dark transition duration-300 rounded-lg font-itim p-2 px-8 mb-5 2xl:mb-0"
                 >
                     Ir para o pagamento 
                     <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

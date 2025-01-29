@@ -5,7 +5,6 @@ import Footer from "./finalizationsPages/Footer";
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import green_cup from "../assets/images/green_cup.webp";
 
-
 const Thanks = () => {
   return (
     <div className="payment-page App bg-repeat bg-auto" style={{backgroundImage: `url(${green_cup})`}}>

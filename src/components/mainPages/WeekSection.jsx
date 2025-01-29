@@ -9,14 +9,16 @@ const WeekSection = () => {
   return (
     <div className="font-inria text-xl flex flex-col items-center justify-center md:gap-5 md:p-10 p-2">         
       <div>
-        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full w-[360px] h-[360px] p-10 mx-auto">
-          <p className="mt-6 mb-4">Prepare-se para o Carnaval com um programa único e estruturado que combina nutrição, exercícios e organização.</p>
-          <p className="mt-5 mb-4">Você tera o suporte necessário para alcançar resultados sustentáveis!</p>
+        <div className="bg-yellow-default text-purple-dark bg-opacity-35 rounded-full sm:w-[360px] sm:h-[360px] w-[290px] h-[290px] sm:p-10 p-3 mx-auto">
+          <p className="mt-6">Prepare-se para</p>
+          <p className="sm:mb-4 mb-2">o Carnaval com um programa único e estruturado que combina nutrição, exercícios e organização.</p>
+          <p className="sm:mt-5 sm:mb-4 mt-1">Você tera o suporte necessário para alcançar resultados sustentáveis!</p>
         </div>
       </div>
-      <div className="flex xl:flex-row xl:justify-center xl:items-center flex-col justify-center items-center">
-        <div className="lg:flex lg:flex-row lg:justify-center lg:items-center">
-          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 lg:max-h-[700px]">
+      <div className="flex xl:flex-row xl:justify-center xl:items-center flex-col justify-center items-center gap-1">
+
+        <div className="lg:flex lg:flex-row lg:justify-center lg:items-start xl:items-center gap-1">
+          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-16 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 md:mb-0 lg:py-8 xl:py-5">
             <div className="text-purple-default mx-auto">
               <p className="font-italianno text-6xl">Semana 1</p>
               <p className="underline font-bold">Foco Total!</p>
@@ -38,7 +40,7 @@ const WeekSection = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 lg:py-3">
+          <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5 ">
             <div className="text-purple-default mx-auto">
               <p className="font-italianno text-6xl">Semana 2</p>
               <p className="underline font-bold">Sem Perder o Ritmo!</p>
@@ -64,6 +66,7 @@ const WeekSection = () => {
             
           </div>
         </div>
+
         <div className="flex flex-col justify-center items-center md:m-2 m-5 mb-9 md:mt-1 border-2 border-purple-dark rounded-3xl bg-purple-light shadow-right-lg p-5 gap-5">
             <div className="text-purple-default mx-auto">
                 <p className="font-italianno text-6xl">Semana 3</p>

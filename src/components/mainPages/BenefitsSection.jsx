@@ -18,8 +18,8 @@ const BenefitsSection = () => {
         </div>
 
         <div className="xl:flex xl:flex-row md:justify-center md:items-center">
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-5 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={Cardapio}
                   alt="Imagem de um prato com garfo e faca representando que teremos cardápios diferentes."
@@ -30,8 +30,8 @@ const BenefitsSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={NutriGe}
                   alt="Imagem da Nutri Gerusa representando o contato direto durante o programa."
@@ -41,8 +41,8 @@ const BenefitsSection = () => {
               <p className="text-black text-xl mt-5">Acompanhamento dedicado para te ajudar a alcançar seus objetivos.</p>
             </div>
           </div>
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={Exercicios}
                   alt="Imagem de pessoas fazendo exercícios representando as dicas de exercícios durante o programa."
@@ -55,8 +55,8 @@ const BenefitsSection = () => {
           
         </div>
         <div className="xl:flex xl:flex-row md:justify-center md:items-center">
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={Planejamento}
                   alt="Imagem de calendário e um relógio representando a organização e o planejamento da rotina que terá durante o programa."
@@ -66,8 +66,8 @@ const BenefitsSection = () => {
               <p className="text-black text-xl mt-5">Alinhe sua alimentação, treinos e dia a dia para resultados consistentes.</p>
             </div>
           </div>
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={WhatsApp}
                   alt="Imagem de uma pessoa segurando um celular com o ícone do WhatsApp representando o grupo exclusivo no WhatsApp."
@@ -78,8 +78,8 @@ const BenefitsSection = () => {
             </div>
           </div>
 
-          <div className="flex justify-center items-center m-2 mb-9 gap-4">
-            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 w-80 h-96">
+          <div className="flex justify-center items-center m-12 mb-9 gap-4">
+            <div className="text-purple-default px-4 py-9 mx-auto flex flex-col items-center text-2xl border border-purple-default rounded-lg shadow-xl md:w-96 md:h-80 sm:w-80 sm:h-96">
               <img
                   src={PercaPeso}
                   alt="Imagem de uma pessoa com a calça larga representando a perda de peso que terá durante o programa."

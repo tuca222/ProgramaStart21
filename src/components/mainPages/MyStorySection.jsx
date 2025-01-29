@@ -32,7 +32,7 @@ const MyStorySection = () => {
         <div>
             <a
                 href="/FacaParteDoStart21"
-                className="bg-yellow-default hover:bg-yellow-dark text-purple-dark w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 transition duration-300"
+                className="bg-yellow-default hover:bg-yellow-dark text-purple-dark w-[200px] sm:w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 transition duration-300 whitespace-normal text-center"
                 >
                 Faça parte do Start 21!
             </a>

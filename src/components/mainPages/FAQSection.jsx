@@ -53,19 +53,18 @@ const FaqSection = () => {
   return (
     <section className='md:p-10 p-2'>
         <div>
-        {/* Coluna FAQ */}
             <div className='font-inria flex flex-col justify-center items-center'>
-                <h1 className="text-7xl text-center text-purple-default font-italianno lg:text-left mt-5 mb-6 px-20">
+                <h1 className="text-7xl text-center text-purple-default font-italianno lg:text-left mt-5 mb-6 px-10">
                     FAQ do Start21
                 </h1>
-                <div className='flex flex-col md:flex-row md:items-start md:gap-10 justify-start items-center'>
+                <div className='flex flex-col md:flex-row md:items-start md:gap-10 justify-center items-center'>
                   <img
                       src={FotoFAQ}
                       alt="Foto da Nutricionista Gerusa Lorenzetti trabalhando, sentada em uma mesa com um notebook"
-                      className="object-cover rounded-xl w-[350px] h-[457px] mx-auto mb-6"
+                      className="object-cover rounded-xl w-[250px] h-[400px] sm:w-[350px] sm:h-[457px] mx-auto mb-6"
                       >
                   </img>
-                  <div className="space-y-4 px-4 py-2 bg-purple-default_light w-[350px] rounded-md">
+                  <div className="space-y-4 px-4 py-2 bg-purple-default_light w-[250px] sm:w-[350px] rounded-md">
                       {faqs.map((faq, index) => (
                       <div
                           key={index}
@@ -93,7 +92,7 @@ const FaqSection = () => {
                 <div className='mt-12 mb-8'>
                     <a
                         href="/ParticipeDoStart21"
-                        className="bg-yellow-default hover:bg-yellow-dark text-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 "
+                        className="bg-yellow-default hover:bg-yellow-dark text-purple-dark transition duration-300 w-[200px] sm:w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 "
                         >
                         Participe do Start 21!!
                     </a>

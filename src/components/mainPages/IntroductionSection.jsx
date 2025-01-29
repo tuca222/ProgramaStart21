@@ -8,7 +8,7 @@ const IntroductionSection = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col lg:flex-row justify-center items-center md:gap-10 md:p-5 lg:p-5 p-2">
+      <div className="flex flex-col lg:flex-row justify-center items-center md:gap-10 md:p-5 lg:p-5">
         <img
           src={FotoIntro}
           alt="Foto da Nutricionista Gerusa Lorenzetti fazendo exercício"
@@ -16,7 +16,7 @@ const IntroductionSection = () => {
         />
 
         <div className="flex flex-col justify-between items-center md:gap-20 font-inria m-5 lg:order-1 md:w-96 gap-5">
-          <div className="border-2 border-purple-default rounded-lg shadow-2xl h-60 flex justify-center items-center bg-white bg-opacity-40">
+          <div className="border-2 border-purple-default rounded-lg shadow-2xl sm:h-60 h-48 m-2 sm:m-0 flex justify-center items-center bg-white bg-opacity-40">
             <h1 className="text-3xl md:text-4xl text-center text-shadow-sm">
               Redescubra sua energia e transforme seu corpo em 21 dias!!!
             </h1>
@@ -30,7 +30,7 @@ const IntroductionSection = () => {
         </div>
 
 
-        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto w-[350px] h-[600px] rounded-lg mb-6 lg:order-2">
+        <div className="flex justify-center items-center bg-purple-light text-6xl mx-auto sm:w-[350px] sm:h-[600px] w-[290px] h-[540px] rounded-lg mb-6 lg:order-2">
           <iframe
               id="iframe-responsivo"
               title="Start 21 - Vídeo Explicativo"
@@ -46,7 +46,7 @@ const IntroductionSection = () => {
 
       <a
         href="/QueroParticiparAgora"
-        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 w-[300px] rounded-lg font-itim text-xl m-4 py-4 px-6 md:ml-16">
+        className="bg-purple-default text-white hover:bg-purple-dark transition duration-300 sm:w-[300px] w-[250px] rounded-lg font-itim text-xl m-4 py-4 px-6 md:ml-16">
         Quero Participar Agora!
       </a>
 

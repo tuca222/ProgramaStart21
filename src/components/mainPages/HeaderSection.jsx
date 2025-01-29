@@ -43,9 +43,9 @@ const HeaderSection = () => {
                 </svg>
             </div> */}
 
-            <div className="flex flex-col justify-center items-center md:mt-11 md:mb-6 mt-2">
-                <div className="text-center p-1 font-bold">
-                    <h2 className="md:text-4xl text-sm px-5">
+            <div className="flex flex-col justify-center items-center md:mt-11 md:mb-6 sm:mt-2">
+                <div className="text-center sm:p-1 font-bold">
+                    <h2 className="md:text-4xl text-sm sm:px-5 px-1">
                         {/* Oferta especial de início de ano!!! */}
                         OFERTA ESPECIAL VÁLIDA APENAS PARA O INÍCIO DE 2025!
                     </h2>
@@ -54,11 +54,11 @@ const HeaderSection = () => {
                         {/* <CountdownTimer targetDate={targetDate} /> */}
                     </p>
                 </div>
-                <h1 className="md:text-9xl text-8xl font-italianno text-purple-default">Start 21</h1>
-                <p className="font-itim mb-6 md:text-2xl text-xl">com Gerusa Lorenzetti</p>
+                <h1 className="md:text-9xl sm:text-8xl text-6xl mt-2 sm:mt-0 font-italianno text-purple-default font-semibold sm:font-normal">Start 21</h1>
+                <p className="font-itim mb-6 md:text-2xl text-lg">com Gerusa Lorenzetti</p>
                 <a
                     href="/GarantaSuaVaga"
-                    className="bg-purple-default text-white py-4 px-6 font-itim text-xl rounded-lg hover:bg-purple-dark transition duration-300 breathing md:mt-5">
+                    className="bg-purple-default text-white sm:py-4 sm:px-6 py-2 px-2 sm:mb-0 mb-2 font-itim text-xl rounded-lg hover:bg-purple-dark transition duration-300 breathing md:mt-5">
                     Garanta sua vaga!
                 </a>
             </div>
